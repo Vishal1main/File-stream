@@ -4,13 +4,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Telegram:
-    API_ID = int(env.get("API_ID"))
-    API_HASH = str(env.get("API_HASH"))
-    BOT_TOKEN = str(env.get("BOT_TOKEN"))
-    OWNER_ID = int(env.get('OWNER_ID', '7978482443'))
+    API_ID = int(env.get("API_ID", "23171051"))
+    API_HASH = str(env.get("API_HASH", "10331d5d712364f57ffdd23417f4513c"))
+    BOT_TOKEN = str(env.get("BOT_TOKEN", "7985605655:AAFV03kRcAVUZyv6cHzJ3adwn9h8YsKrvAg"))
+    OWNER_ID = int(env.get('OWNER_ID', '6987799874'))
     WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
-    DATABASE_URL = str(env.get('DATABASE_URL'))
-    UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Telegram"))
+    DATABASE_URL = str(env.get('DATABASE_URL', 'mongodb+srv://tmr624062:5Bm5K02Z5PZMqtqa@cluster0.zy0l7qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
+    UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Tmr_Botz"))
     SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
     FORCE_SUB_ID = env.get('FORCE_SUB_ID', None)
     FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', False)
